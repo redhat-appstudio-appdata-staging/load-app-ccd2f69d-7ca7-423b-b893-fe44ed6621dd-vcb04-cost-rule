@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-java-springboot-basic-jcgc
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/test-rhtap-30-tenant/load-app-ccd2f69d-7ca7-423b-b893-fe44ed6621dd/devfile-sample-java-springboot-basic-jcgc@sha256:c3babf8d6f5f80c3e2cf420ee0c3256ce2ae761eb0df7257a11a429670317175
+        name: my-java-springboot
+        resources: {}
+status: {}

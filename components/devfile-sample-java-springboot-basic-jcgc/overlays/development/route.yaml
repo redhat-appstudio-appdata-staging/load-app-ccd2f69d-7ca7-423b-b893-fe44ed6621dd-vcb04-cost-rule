@@ -1,0 +1,20 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: devfile-sample-java-springboot-basic-jcgc
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: devfile-sample-java-springboot-basic-jcgc
+    app.kubernetes.io/part-of: load-app-ccd2f69d-7ca7-423b-b893-fe44ed6621dd
+  name: devfile-sample-java-sprinpqs3
+spec:
+  path: /
+  port:
+    targetPort: 8081
+  to:
+    kind: Service
+    name: devfile-sample-java-springboot-basic-jcgc
+    weight: null
+status: {}
